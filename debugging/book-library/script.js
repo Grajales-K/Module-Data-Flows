@@ -38,7 +38,7 @@ function submit() {
     alert("Please fill all fields!");
     return false;
   } else {
-    let book = new Book(title.value, title.value, pages.value, check.checked);
+    let book = new Book(title.value, author.value, pages.value, check.checked);
     myLibrary.push(book);
     render();
   }
@@ -97,7 +97,7 @@ function render() {
     deleteBtn.innerHTML = "Delete";
     deleteBtn.addEventListener("clicks", function () {
       alert(`You've deleted title: ${myLibrary[i].title}`);
-      myLibrary.splice(i, -1);
+      myLibrary.splice(i, 1);
       render();
     });
   }
