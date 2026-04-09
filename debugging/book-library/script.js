@@ -33,10 +33,14 @@ function submit() {
   if (
     title.value == null ||
     title.value == "" ||
+    author.value == null ||
+    author.value == "" ||
     pages.value == null ||
-    pages.value == ""
+    pages.value == "" ||
+    pages.value <= 0  ||
+    pages.value != parseInt()
   ) {
-    alert("Please fill all fields!");
+    alert("Please fill the field with valid info!");
     return false;
   } else {
     let book = new Book(title.value, author.value, pages.value, check.checked);
