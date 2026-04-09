@@ -1,10 +1,8 @@
-
 let myLibrary = [];
 
 window.addEventListener("load", function (e) {
   populateStorage();
   render();
-
 });
 
 function populateStorage() {
@@ -37,7 +35,7 @@ function submit() {
     author.value == "" ||
     pages.value == null ||
     pages.value == "" ||
-    pages.value <= 0  ||
+    pages.value <= 0 ||
     pages.value != parseInt()
   ) {
     alert("Please fill the field with valid info!");
