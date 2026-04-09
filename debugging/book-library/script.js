@@ -4,6 +4,7 @@ let myLibrary = [];
 window.addEventListener("load", function (e) {
   populateStorage();
   render();
+
 });
 
 function populateStorage() {
@@ -95,9 +96,9 @@ function render() {
     deleteCell.appendChild(deleteBtn);
     deleteBtn.className = "btn btn-warning";
     deleteBtn.innerHTML = "Delete";
-    deleteBtn.addEventListener("clicks", function () {
+    deleteBtn.addEventListener("click", function (index) {
       alert(`You've deleted title: ${myLibrary[i].title}`);
-      myLibrary.splice(i, 1);
+      myLibrary.splice(index, 1);
       render();
     });
   }
