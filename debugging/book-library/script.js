@@ -29,14 +29,10 @@ const check = document.getElementById("check");
 //via Book function and start render function
 function submit() {
   if (
-    title.value == null ||
-    title.value == "" ||
-    author.value == null ||
-    author.value == "" ||
-    pages.value == null ||
-    pages.value == "" ||
-    pages.value <= 0 ||
-    pages.value != parseInt()
+    !title.value ||
+    !author.value ||
+    !pages.value ||
+    pages.value <= 0 
   ) {
     alert("Please fill the field with valid info!");
     return false;
@@ -55,24 +51,29 @@ function Book(title, author, pages, check) {
 }
 
 function render() {
-  let table = document.getElementById("display");
-  let rowsNumber = table.rows.length;
-  //delete old table
-  for (let n = rowsNumber - 1; n > 0; n--) {
-    table.deleteRow(n);
-  }
+  let libraryBody = document.getElementById("table-body");
+  
+  //clean the table before render new one
+  libraryBody.innerHTML = "";
+
+  // //delete old table
+  // for (let n = rowsNumber - 1; n > 0; n--) {
+  //   libraryBody.deleteRow(n);
+  // }
+
   //insert updated row and cells
-  let length = myLibrary.length;
-  for (let i = 0; i < length; i++) {
-    let row = table.insertRow(1);
+  for (let i = 0; i < myLibrary.length; i++) {
+    let row = libraryBody.insertRow(-1);
+
     let titleCell = row.insertCell(0);
     let authorCell = row.insertCell(1);
     let pagesCell = row.insertCell(2);
     let wasReadCell = row.insertCell(3);
     let deleteCell = row.insertCell(4);
-    titleCell.innerHTML = myLibrary[i].title;
-    authorCell.innerHTML = myLibrary[i].author;
-    pagesCell.innerHTML = myLibrary[i].pages;
+    
+    titleCell.textContent = myLibrary[i].title;
+    authorCell.textContent = myLibrary[i].author;
+    pagesCell.textContent = myLibrary[i].pages;
 
     //add and wait for action for read/unread button
     let changeBut = document.createElement("button");
