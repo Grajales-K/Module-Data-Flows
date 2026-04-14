@@ -4,9 +4,9 @@
   padding: 20px;
 }
 
-
-form {
-  margin-bottom: 20px;
+.btn {
+  display: block;
+  margin-top: 10px;
 }
 
 .form-check-label {
@@ -17,6 +17,7 @@ form {
 button.btn-info {
   margin: 20px;
 }
-.btn {
-  display: block;
+
+#display {
+  margin-top: 30px;
 }
