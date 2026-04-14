@@ -1,12 +1,12 @@
 .form-group {
-  width: 400px;
-  height: 300px;
-  align-self: left;
-  padding-left: 20px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
 }
 
-.btn {
-  display: block;
+
+form {
+  margin-bottom: 20px;
 }
 
 .form-check-label {
@@ -16,4 +16,7 @@
 
 button.btn-info {
   margin: 20px;
+}
+.btn {
+  display: block;
 }
