@@ -1,96 +1,102 @@
-
 .jumbotron {
-    padding: 1rem 1rem;
-    margin-bottom: 1rem;
-    background-color: #e9ecef;
-    border-radius: .3rem;
-    text-align: center;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  text-align: center;
 }
 
 .jumbotron h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0;
+  font-size: 1.8rem;
+  margin-bottom: 0;
 }
 
 .jumbotron p {
-    font-size: 0.9rem;
-    margin-bottom: 0;
-    color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: #666;
 }
 
-
 .form-group {
-    max-width: 280px;
-    margin: 5px 0 15px 20px; 
-    padding: 8px 12px;
-    background-color: #fcfcfc;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    height: auto;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  max-width: 280px;
+  margin: 5px 0 15px 20px;
+  padding: 8px 12px;
+  background-color: #fcfcfc;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .form-group label {
-    font-size: 0.8rem;
-    margin-top: 4px;
-    margin-bottom: 2px;
-    display: block;
-    font-weight: 600;
-    color: #444;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  display: block;
+  font-weight: 600;
+  color: #444;
 }
 
 .form-control {
-    height: 26px; 
-    padding: 2px 6px;
-    font-size: 0.8rem;
-    margin-bottom: 5px;
+  height: 26px;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
 }
 
-
 .form-check {
-    margin: 4px 0; 
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
+  margin: 4px 0;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
 }
 
 .form-check-input {
-    margin-top: 0;
-    margin-right: 8px;
-    width: 13px;
-    height: 13px;
+  margin-top: 0;
+  margin-right: 8px;
+  width: 13px;
+  height: 13px;
 }
 
-
 .btn {
-    font-size: 0.8rem;
-    padding: 3px 10px;
-    border-radius: 4px;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.btn-success {
+  background-color: #1e7e34 !important;
+  border-color: #1c7430 !important;
+  color: #fff !important;
+}
+.btn-warning {
+  color: #212529 !important; 
+  font-weight: 600; 
 }
 
 .btn-primary {
-    margin-top: 8px;
-    width: 100%;
+  margin-top: 8px;
+  width: 100%;
 }
 
-button.btn-info {
-    margin: 10px 20px;
-    font-weight: 500;
+.btn-info {
+  background-color: #117a8b !important;
+  border-color: #10707f !important;
+  color: #fff !important;
 }
 
-/* --- 5. TABLA --- */
 .table {
-    font-size: 0.85rem;
-    width: 98%;
-    margin-left: 1%;
+  font-size: 0.85rem;
+  width: 98%;
+  margin-left: 1%;
 }
 
 .thead-dark th {
-    font-size: 0.8rem;
-    padding: 8px !important;
+  font-size: 0.8rem;
+  padding: 8px !important;
 }
 
 .table td {
-    padding: 4px 8px !important;
-    vertical-align: middle !important;
+  padding: 4px 8px !important;
+  vertical-align: middle !important;
 }
