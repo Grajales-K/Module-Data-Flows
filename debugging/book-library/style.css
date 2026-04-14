@@ -1,3 +1,9 @@
+.btn-add {
+  margin: 20px;       
+  padding: 8px 16px;  
+  display: inline-block;
+}
+
 .jumbotron {
   padding: 1rem 1rem;
   margin-bottom: 1rem;
@@ -6,25 +12,16 @@
   text-align: center;
 }
 
-.jumbotron h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0;
-}
-
-.jumbotron p {
-  font-size: 0.9rem;
-  margin-bottom: 0;
-  color: #666;
-}
+.jumbotron h1 { font-size: 1.8rem; margin-bottom: 0; }
+.jumbotron p { font-size: 0.9rem; margin-bottom: 0; color: #666; }
 
 .form-group {
   max-width: 280px;
-  margin: 5px 0 15px 20px;
+  margin: 0 0 15px 20px; 
   padding: 8px 12px;
   background-color: #fcfcfc;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
-  height: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -44,19 +41,6 @@
   margin-bottom: 5px;
 }
 
-.form-check {
-  margin: 4px 0;
-  font-size: 0.8rem;
-  display: flex;
-  align-items: center;
-}
-
-.form-check-input {
-  margin-top: 0;
-  margin-right: 8px;
-  width: 13px;
-  height: 13px;
-}
 
 .btn {
   font-size: 0.8rem;
@@ -64,25 +48,27 @@
   border-radius: 4px;
 }
 
-.btn-success {
-  background-color: #1e7e34 !important;
-  border-color: #1c7430 !important;
-  color: #fff !important;
-}
-.btn-warning {
-  color: #212529 !important; 
-  font-weight: 600; 
-}
-
-.btn-primary {
-  margin-top: 8px;
-  width: 100%;
-}
 
 .btn-info {
   background-color: #117a8b !important;
   border-color: #10707f !important;
   color: #fff !important;
+}
+
+.btn-success {
+  background-color: #1e7e34 !important;
+  border-color: #1c7430 !important;
+  color: #fff !important;
+}
+
+.btn-warning {
+  background-color: #ffc107 !important; 
+  color: #212529 !important; 
+}
+
+.btn-primary {
+  margin-top: 8px;
+  width: 100%;
 }
 
 .table {
@@ -99,4 +85,22 @@
 .table td {
   padding: 4px 8px !important;
   vertical-align: middle !important;
+}
+.check-box {
+  margin-left: 0;     
+  margin-top: 5px;          
+  margin-bottom: 5px;
+  vertical-align: middle;   
+  cursor: pointer;
+}
+
+.check-label {
+  display: inline-block;    
+  vertical-align: middle;  
+  margin: 0 !important;    
+  padding-left: 4px;       
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
 }
