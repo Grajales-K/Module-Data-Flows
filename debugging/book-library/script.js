@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const bookForm = document.getElementById("demo");
 
   bookForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // <--- SOLUCIÓN: Evita que la página se refresque
+    e.preventDefault();
     submitBook();
   });
 });
